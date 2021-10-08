@@ -4,7 +4,7 @@ files:
   - source: /app.py
     destination: /
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: Scripts/UnzipResourceBundle.sh
   ApplicationStart:
     - location: Scripts/RunFunctionalTests.sh
