@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /app.py
+    destination: /
+hooks:
+  BeforeInstall:
+    - location: Scripts/UnzipResourceBundle.sh
+  ApplicationStart:
+    - location: Scripts/RunFunctionalTests.sh
+      timeout: 3600
