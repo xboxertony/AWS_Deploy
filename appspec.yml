@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /app.py
-    destination: /
+    destination: /home/ubuntu
 hooks:
   AfterInstall:
     - location: Scripts/UnzipResourceBundle.sh
