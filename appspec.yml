@@ -8,3 +8,4 @@ hooks:
     - location: Scripts/UnzipResourceBundle.sh
   ApplicationStart:
     - location: Scripts/RunFunctionalTests.sh
+      timeout: 3600
